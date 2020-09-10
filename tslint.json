@@ -1,0 +1,50 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:recommended"],
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
+  "rules": {
+    "indent": [false, "spaces", 2],
+    "interface-name": false,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [false, "single"],
+    "no-trailing-whitespace": false,
+    "only-arrow-functions": false,
+    "no-empty": false,
+    "no-object-literal-type-assertion": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "comment-format": [true, "check-space"],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "trailing-comma": [false],
+    "no-console": [false],
+    "valid-jsdoc": false,
+    "no-shadowed-variable": [
+      false,
+      {
+        "class": true,
+        "enum": true,
+        "function": true,
+        "interface": false,
+        "namespace": true,
+        "typeAlias": false,
+        "typeParameter": false
+      }
+    ]
+  }
+}
